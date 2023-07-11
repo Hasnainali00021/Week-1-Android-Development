@@ -2,7 +2,7 @@ import * as React from 'react';
 import { ScrollView, View } from 'react-native';
 
 import LittleLemonHeader from './Components/LittleLemonHeader.js';
-// import LittleLemonFooter from './Components/LittleLemonFooter.js';
+import LittleLemonFooter from './Components/LittleLemonFooter.js';
 import WelcomeScreen from './Components/WelcomeScreen.js';
 
 export default function App() {
@@ -12,8 +12,8 @@ export default function App() {
         <LittleLemonHeader />
         <WelcomeScreen />
       </View>
-      <View style={{ backgroundColor: '#495E57' }}>
-        {/* <LittleLemonFooter /> */}
+      <View style={{ flex: 0.2, backgroundColor: '#495E57' }}>
+        <LittleLemonFooter />
       </View>
     </>
   );
