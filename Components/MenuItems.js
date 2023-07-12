@@ -1,5 +1,5 @@
 // import React from 'react';
-
+// import { StyleSheet } from 'react-native';
 // import { View, Text, ScrollView } from 'react-native';
 //  const green = '#495E57';
 //  const yellow = '#F4CE14';
@@ -10,17 +10,15 @@
 //  ];
 //  const MenuItems = ()=>{
 //     return (
-//         <View style={{ flex: 0.75 }}>
+//         <View style={menuStyles.container}>
 //             <ScrollView 
 //             indicatorStyle= {"white"}
 //             horizontal= {false}
-//             style={{
-//                  paddingHorizontal: 40, paddingVertical: 40, backgroundColor: "black",
-//                  }}>
-//                 <Text style={{ fontSize: 40, flexWrap: 'wrap', color: 'white'}}>
+//             style={menuStyles.innerContainer}>
+//                 <Text style={menuStyles.headerText}>
 //                     View Menu
 //                     </Text>
-//                 <Text style={{ fontSize:30, color: yellow  }}>
+//                 <Text style={ menuStyles.itemText }>
 //                     {menuItemsToDisplay[0]}
 //                     </Text>
 //             </ScrollView>
@@ -30,3 +28,18 @@
 //  };
 
 //  export default MenuItems;
+
+//  const menuStyles = StyleSheet.create({
+// container: {
+//     flex: 0.75
+// },
+// innerContainer:{
+//     padding: 40, backgroundColor: "#495E57",
+// },
+// headerText: {
+//     fontSize: 40, flexWrap: 'wrap', color: 'white'
+// },
+// itemText: {
+//     fontSize:30, color: yellow
+// }
+//  })

@@ -1,11 +1,12 @@
 import * as React from 'react';
 import { View, Text } from 'react-native';
+import { StyleSheet } from 'react-native';
 
 export default function LittleLemonHeader() {
   return (
-    <View style={{ flex: 0.2 }}>
-      <View style={{ flex: 1, backgroundColor: 'yellow', alignItems: 'center', justifyContent: 'flex-end' }}>
-        <Text style={{ fontSize: 40, color: 'black', marginBottom: 20 }}>
+    <View style={ headerStyles.container }>
+      <View style={ headerStyles.innerContainer }>
+        <Text style={ headerStyles.headerText }>
           Little Lemon
         </Text>
       </View>
@@ -23,3 +24,15 @@ export default function LittleLemonHeader() {
     </View>
   );
 }
+
+const headerStyles = StyleSheet.create ({
+  container: {
+    flex: 0.2
+  },
+  innerContainer: {
+     flex: 1, backgroundColor: 'yellow', alignItems: 'center', justifyContent: 'flex-end' 
+  },
+  headerText: {
+     fontSize: 40, color: 'black', marginBottom: 20 
+  }
+})
